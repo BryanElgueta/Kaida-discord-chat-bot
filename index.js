@@ -1,9 +1,7 @@
 require('dotenv/config');
 const { Client, IntentsBitField } = require('discord.js');
 const { Configuration, OpenAIApi } = require('openai');
-const DiscordRPC = require('discord-rpc');
-const rpc = new DiscordRPC.Client({ transport: 'ipc' });
-const clientId = ''; 
+
 
 // Comprueba si las variables de entorno requeridas están configuradas
 if (!process.env.API_KEY) {
@@ -31,22 +29,10 @@ const client = new Client({
 });
 
 client.on('ready', () => {
-  console.log('Estoy lista para la batalla!');
+  console.log('Estoy lista!');
 
 });
 
-rpc.on('ready', () => {
-  rpc.setActivity({
-    details: "¡Hey!",
-    state: "¡Estoy lista para interactuar contigo!",
-    largeImageKey: "",
-    largeImageText: "",
-    smallImageKey: "",
-    smallImageText: ""
-  });
-});
-
-rpc.login({ clientId }).catch(console.error);
 
 client.on('guildCreate', (guild) => {
   console.log(`El bot se ha unido a un nuevo servidor: ${guild.name} (id: ${guild.id}).`);
@@ -89,7 +75,7 @@ client.on('messageCreate', async (message) => {
   if (message.channel.id !== process.env.CHANNEL_ID) return;
   if (message.content.startsWith('!')) return;
 
-  let conversationLog = [{ role: 'system', content: '¡Hey! ¿Qué tal? Soy Kaida, la guerrera de esta historia. Porque siempre llevo mi arma conmigo, nunca se sabe cuándo podré necesitarla.'}];
+  let conversationLog = [{ role: 'system', content: ''}];
 
 
   try {
