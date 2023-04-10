@@ -16,9 +16,6 @@ git clone https://github.com/BryanElgueta/Kaida-chat-discordbot.git .
 npm install discord.js
 ```
 ```powershell
-npm install discord-rpc
-```
-```powershell
 npm install openai
 ```
 3. Crea un nuevo archivo llamado `.env` y copia el formato de `example-.env` (o simplemente puedes renombrar `example-.env`).
