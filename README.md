@@ -1,5 +1,5 @@
 # Kaida (快打) bot de discord
-Este es un bot de chat simple de Discord construido usando Node.js ,discord.js y el modelo gpt-3.5-turbo de Open AI. Este es el mismo modelo utilizado para el popular chatbot Chat GPT, este bot de discord tiene personalidad como si fuera un personaje de mundo de fantasia.
+Este es un bot de chat simple de Discord construido usando Node.js ,discord.js y el modelo gpt-3.5-turbo de Open AI. Este es el mismo modelo utilizado para el popular chatbot Chat GPT, este bot de discord tiene personalidad de personaje de anime.
 
 ![Avatar de discord ](https://github.com/BryanElgueta/Kaida-chat-discordbot/blob/main/UI/UI.png)
 
